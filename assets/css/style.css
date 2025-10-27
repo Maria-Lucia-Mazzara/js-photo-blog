@@ -1,16 +1,30 @@
-
-body{
-margin: 0;
-padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .img_header {
-  background-image: url('../img/img/wall.png');
-  height: 150px;
+    background-image: url('../img/img/wall.png');
+    height: 150px;
 }
-.text_header{
+
+.text_header {
     padding-top: 30px;
     font-size: 60px;
     font-family: 'Edu TAS Beginner', sans-serif;
     font-weight: bold;
 }
+
+.img_main {
+    background-image: url('../img/img/cork.png');
+    height: auto;
+}
+
+.date_card {
+   font-family: 'Sometype Mono', monospace;
+
+}
+.title_card {
+    font-family: 'Edu TAS Beginner', sans-serif;
+}
+
