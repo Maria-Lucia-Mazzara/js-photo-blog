@@ -2,7 +2,6 @@ console.log(document);
 
 const card = document.querySelector('.row');
 const overlay = document.querySelector('.nascosta');
-const tutte_img = document.querySelectorAll('.card_img');
 const close_btn = document.querySelector('.close-btn');
 
 
@@ -28,20 +27,20 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
             `;
             card.innerHTML += card_piena
         });
-
+        const tutte_img = document.querySelectorAll('.card_img');
+        tutte_img.forEach(img => {
+            img.addEventListener('click', function () {
+                overlay.classList.remove('nascosta');
+            });
+        });
+        close_btn.addEventListener('click', function () {
+            overlay.classList.add('nascosta');
+        });
     })
     .catch(error => {
         console.log(error.message);
-
     });
 
 
 
-tutte_img.forEach(img => {
-    img.addEventListener('click', function () {
-        overlay.classList.remove('nascosta');
-    });
-});
-close_btn.addEventListener('click', function () {
-    overlay.classList.add('nascosta');
-});
+
