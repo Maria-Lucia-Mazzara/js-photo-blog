@@ -1,6 +1,7 @@
 console.log(document);
 
-const card = document.querySelector('.row')
+const card = document.querySelector('.row');
+
 
 axios.get('https://lanciweb.github.io/demo/api/pictures/')
     .then(res => {

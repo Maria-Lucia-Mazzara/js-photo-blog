@@ -42,7 +42,7 @@ body {
 }
 
 .overlay-content img {
-  max-width: 80%;            
+  max-width: 80%;         
   
 }
 .close-btn {
@@ -53,3 +53,7 @@ body {
   cursor: pointer;
   border: none;
 }
+.nascosta {
+  display: none;
+}
+
